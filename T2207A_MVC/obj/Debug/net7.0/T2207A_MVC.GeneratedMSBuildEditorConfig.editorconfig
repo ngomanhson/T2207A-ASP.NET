@@ -1,0 +1,97 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = T2207A_MVC
+build_property.RootNamespace = T2207A_MVC
+build_property.ProjectDir = /Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Brand/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnJhbmQvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Brand/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnJhbmQvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Brand/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnJhbmQvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Home/Demo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EZW1vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Web/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2ViL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Web/Xyz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2ViL1h5ei5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-yl4574yfw2

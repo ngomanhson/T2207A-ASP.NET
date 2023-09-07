@@ -1,0 +1,42 @@
+﻿@model List<T2207A_MVC.Entities.Category>
+@{
+    // 1. var xyz = ViewData["categories"];
+    // 2. var abc = ViewBag.categories;
+
+    ViewData["Title"] = "List Category";
+}
+
+    <div class="text-center mb-3">
+        <h1>List category</h1>
+    </div>
+    <div class="col-8 mx-auto">
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.id</td>
+                        <td>@item.name</td>
+                        <td>
+                            <a href="" class="btn btn-success">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                            <a href="" class="btn btn-danger">
+                                <i class="fa-solid fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+        <a href="/category/create" class="btn btn-primary">Create category</a>
+    </div>
