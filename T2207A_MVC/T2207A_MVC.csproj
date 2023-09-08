@@ -14,6 +14,7 @@
     <None Remove="Entities\" />
     <None Remove="Views\Category\" />
     <None Remove="Views\Brand\" />
+    <None Remove="Models\Brand\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Web\" />
@@ -21,6 +22,7 @@
     <Folder Include="Entities\" />
     <Folder Include="Views\Category\" />
     <Folder Include="Views\Brand\" />
+    <Folder Include="Models\Brand\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />

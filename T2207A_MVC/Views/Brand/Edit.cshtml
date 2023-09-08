@@ -1,24 +1,38 @@
-﻿@{
+﻿@model T2207A_MVC.Models.Brand.EditModel;
+@{
     ViewData["Title"] = "Edit brand";
 }
 
 
 <section class="section">
     <div class="container">
+        <div class="text-center">
+            <h1 class="text-center">Edit Brand: @Model.name</h1>
+        </div>
         <div class="row">
             <div class="col"></div>
             <div class="col">
-                <form action="" method="post">
+                @using (Html.BeginForm("Create", "Brand", FormMethod.Post))
+                {
+                    <div class="mb-3">
+                        @Html.LabelFor(m => m.name, new { @class = "col-sm-2 col-form-label" })
+                        @Html.TextBoxFor(m => m.name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.name, "", new { @class = "text-danger" })
+                    </div>
+                    <button type="submit" class="btn btn-primary">Edit</button>
+                    @Html.ActionLink("Back to List", "Index");
+                }
+
+                @*<form action="" method="post">
                     <div class="mb-3">
                         <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
                         <input type="text" name="name" class="form-control" id="inputEmail3" />
                     </div>
-                    <button type="submit" class="btn btn-primary">Edit</button>
+                    <button type="submit" class="btn btn-primary">Add</button>
                     <a href="/brand" class="btn btn-success">List brand</a>
-                </form>
+                </form>*@
             </div>
             <div class="col"></div>
         </div>
     </div>
 </section>
-
