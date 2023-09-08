@@ -1,4 +1,5 @@
-﻿@{
+﻿@model T2207A_MVC.Models.CategoryViewModel;
+@{
     ViewData["Title"] = "Create category";
 }
 
@@ -8,15 +9,28 @@
         <div class="row">
             <div class="col"></div>
             <div class="col">
-                <form action="" method="post">
+                @using (Html.BeginForm("Create", "Category", FormMethod.Post))
+                {
                     <div class="mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
-                        <input type="text" name="name" class="form-control" id="inputEmail3" />
+                        @Html.LabelFor(m=>m.name, new { @class= "col-sm-2 col-form-label" })
+                        @Html.TextBoxFor(m=>m.name, new { @class= "form-control" })
+                        @Html.ValidationMessageFor(m=>m.name)
+
                     </div>
                     <button type="submit" class="btn btn-primary">Add</button>
                     <a href="/category" class="btn btn-success">List category</a>
-                </form>
+                }
             </div>
+
+            @*<form action="" method="post">
+                <div class="mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                    <input type="text" name="name" class="form-control" id="inputEmail3" />
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+                <a href="/category" class="btn btn-success">List category</a>
+            </form>*@
+
             <div class="col"></div>
         </div>
     </div>
