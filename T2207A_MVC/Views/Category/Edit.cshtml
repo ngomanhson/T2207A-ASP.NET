@@ -1,21 +1,39 @@
-﻿@{
+﻿@model T2207A_MVC.Models.CategoryEditModel;
+@{
     ViewData["Title"] = "Edit category";
 }
 
 
 <section class="section">
     <div class="container">
+        <div class="text-center">
+            <h1 class="text-center">Edit Category: @Model.name</h1>
+        </div>
         <div class="row">
             <div class="col"></div>
             <div class="col">
-                <form action="" method="post">
+                @using (Html.BeginForm("Edit", "Category", FormMethod.Post))
+                {
+                        @Html.HiddenFor(m=>m.id)
+                    <div class="mb-3">
+                        @Html.LabelFor(m => m.name, new { @class = "col-sm-2 col-form-label" })
+                        @Html.TextBoxFor(m => m.name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.name, "", new { @class = "text-danger" })
+
+                    </div>
+                    <button type="submit" class="btn btn-primary">Edit</button>
+                    @Html.ActionLink("Back to List", "Index");
+                    @*<a href="/category" class="btn btn-success">List category</a>*@
+                }
+
+                @*<form action="" method="post">
                     <div class="mb-3">
                         <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
                         <input type="text" name="name" class="form-control" id="inputEmail3" />
                     </div>
                     <button type="submit" class="btn btn-primary">Edit</button>
                     <a href="/category" class="btn btn-success">List category</a>
-                </form>
+                </form>*@
             </div>
             <div class="col"></div>
         </div>
