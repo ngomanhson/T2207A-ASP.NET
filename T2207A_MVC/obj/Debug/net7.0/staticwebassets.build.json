@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "J8VV2TBI5MCv0jQV22nTwHr4wHY4slhGCOPU+TMgYek=",
+  "Hash": "AXueS0/XG+fg91qKJLgF2USm9NYuoV3Ev/88fDILSEY=",
   "Source": "T2207A_MVC",
   "BasePath": "_content/T2207A_MVC",
   "Mode": "Default",
@@ -1069,6 +1069,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/wwwroot/uploads/475cb9ce-7d12-4826-8154-729fbc78c414.jpg",
+      "SourceId": "T2207A_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/wwwroot/",
+      "BasePath": "_content/T2207A_MVC",
+      "RelativePath": "uploads/475cb9ce-7d12-4826-8154-729fbc78c414.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/475cb9ce-7d12-4826-8154-729fbc78c414.jpg"
+    },
+    {
+      "Identity": "/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/wwwroot/uploads/59304e99-950c-47e6-8947-96a217bf02eb.jpg",
+      "SourceId": "T2207A_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/wwwroot/",
+      "BasePath": "_content/T2207A_MVC",
+      "RelativePath": "uploads/59304e99-950c-47e6-8947-96a217bf02eb.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/59304e99-950c-47e6-8947-96a217bf02eb.jpg"
+    },
+    {
+      "Identity": "/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/wwwroot/uploads/f4e7d71a-c881-4ebe-9a6e-51f9d5075899.jpg",
+      "SourceId": "T2207A_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/wwwroot/",
+      "BasePath": "_content/T2207A_MVC",
+      "RelativePath": "uploads/f4e7d71a-c881-4ebe-9a6e-51f9d5075899.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/f4e7d71a-c881-4ebe-9a6e-51f9d5075899.jpg"
     }
   ]
 }

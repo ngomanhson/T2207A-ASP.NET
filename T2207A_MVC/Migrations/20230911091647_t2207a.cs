@@ -46,16 +46,18 @@ namespace T2207A_MVC.Migrations
                     price = table.Column<double>(type: "float", nullable: false),
                     description = table.Column<string>(type: "text", nullable: false),
                     category_id = table.Column<int>(type: "int", nullable: false),
-                    Brandid = table.Column<int>(type: "int", nullable: true)
+                    brand_id = table.Column<int>(type: "int", nullable: false),
+                    image = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_products", x => x.id);
                     table.ForeignKey(
-                        name: "FK_products_brands_Brandid",
-                        column: x => x.Brandid,
+                        name: "FK_products_brands_brand_id",
+                        column: x => x.brand_id,
                         principalTable: "brands",
-                        principalColumn: "id");
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_products_categories_category_id",
                         column: x => x.category_id,
@@ -65,9 +67,9 @@ namespace T2207A_MVC.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_products_Brandid",
+                name: "IX_products_brand_id",
                 table: "products",
-                column: "Brandid");
+                column: "brand_id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_products_category_id",

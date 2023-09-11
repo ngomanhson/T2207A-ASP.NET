@@ -6,7 +6,7 @@ namespace T2207A_MVC.Entities
 	[Table("products")]
 	public class Product
 	{
-		[Key]
+        [Key]
 		public int id { get; set; } //abtract property
 
 		[Required]
@@ -23,6 +23,13 @@ namespace T2207A_MVC.Entities
 
 		[ForeignKey("category_id")]
 		public Category category { get; set; }
-	}
+
+        public int brand_id { get; set; }
+
+        [ForeignKey("brand_id")]
+        public Brand brand { get; set; }
+
+		public string image { get; set; }
+    }
 }
 

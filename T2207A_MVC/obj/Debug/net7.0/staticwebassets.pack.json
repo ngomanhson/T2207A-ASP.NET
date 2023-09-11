@@ -245,6 +245,18 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
+      "Id": "/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/wwwroot/uploads/475cb9ce-7d12-4826-8154-729fbc78c414.jpg",
+      "PackagePath": "staticwebassets/uploads/475cb9ce-7d12-4826-8154-729fbc78c414.jpg"
+    },
+    {
+      "Id": "/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/wwwroot/uploads/59304e99-950c-47e6-8947-96a217bf02eb.jpg",
+      "PackagePath": "staticwebassets/uploads/59304e99-950c-47e6-8947-96a217bf02eb.jpg"
+    },
+    {
+      "Id": "/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/wwwroot/uploads/f4e7d71a-c881-4ebe-9a6e-51f9d5075899.jpg",
+      "PackagePath": "staticwebassets/uploads/f4e7d71a-c881-4ebe-9a6e-51f9d5075899.jpg"
+    },
+    {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.T2207A_MVC.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

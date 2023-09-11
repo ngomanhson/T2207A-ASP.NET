@@ -15,6 +15,8 @@
     <None Remove="Views\Category\" />
     <None Remove="Views\Brand\" />
     <None Remove="Models\Brand\" />
+    <None Remove="Models\Product\" />
+    <None Remove="Views\Upload\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Web\" />
@@ -23,6 +25,9 @@
     <Folder Include="Views\Category\" />
     <Folder Include="Views\Brand\" />
     <Folder Include="Models\Brand\" />
+    <Folder Include="Models\Product\" />
+    <Folder Include="Views\Upload\" />
+    <Folder Include="wwwroot\uploads\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
@@ -35,5 +40,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\uploads\" />
   </ItemGroup>
 </Project>
