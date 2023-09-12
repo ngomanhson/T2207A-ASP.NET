@@ -11,7 +11,7 @@ using T2207A_MVC.Entities;
 namespace T2207A_MVC.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230911091647_t2207a")]
+    [Migration("20230912180926_t2207a")]
     partial class t2207a
     {
         /// <inheritdoc />

@@ -3,13 +3,12 @@
     ViewData["Title"] = "Create category";
 }
 
-
 <section class="section">
     <div class="container">
         <div class="row">
             <div class="col"></div>
             <div class="col">
-                @using (Html.BeginForm("Create", "Category", FormMethod.Post))
+                @using (Html.BeginForm("Create", "Category", FormMethod.Post, new { enctype = "multipart/form-data" }))
                 {
                     <div class="mb-3">
                         @Html.LabelFor(m => m.name, new { @class = "col-sm-2 col-form-label" })
@@ -17,6 +16,12 @@
                         @Html.ValidationMessageFor(m => m.name, "", new { @class = "text-danger" })
 
                     </div>
+
+                    @*<div class="mb-3">
+                        @Html.LabelFor(m => m.image, new { @class = "col-sm-2 col-form-label" })
+                        @Html.TextBoxFor(m => m.image, new { @class = "form-control", @type = "file" })
+                    </div>*@
+
                     <button type="submit" class="btn btn-primary">Add</button>
                     <a href="/category" class="btn btn-success">List category</a>
                 }

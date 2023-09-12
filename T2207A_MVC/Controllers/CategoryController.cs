@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using T2207A_MVC.Entities;
 using T2207A_MVC.Models;
+using static System.Net.Mime.MediaTypeNames;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -39,7 +40,10 @@ namespace T2207A_MVC.Controllers
         {
             if (ModelState.IsValid) // Viladate
             {
-                _context.Categories.Add(new Category { name = model.name });
+                _context.Categories.Add(new Category
+                {
+                    name = model.name
+                });
                 _context.SaveChanges();
                 return RedirectToAction("Index");
             }
