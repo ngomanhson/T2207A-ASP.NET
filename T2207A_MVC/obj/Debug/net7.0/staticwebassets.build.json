@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "J8VV2TBI5MCv0jQV22nTwHr4wHY4slhGCOPU+TMgYek=",
+  "Hash": "PP1XyT9XuN9r1bbnSWp9qsobOmoE90RYjJyBXYLlfPg=",
   "Source": "T2207A_MVC",
   "BasePath": "_content/T2207A_MVC",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/wwwroot/uploads/61643a1f-70fd-489b-80b9-2fbd3e92444b.jpg",
+      "SourceId": "T2207A_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_MVC/wwwroot/",
+      "BasePath": "_content/T2207A_MVC",
+      "RelativePath": "uploads/61643a1f-70fd-489b-80b9-2fbd3e92444b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/61643a1f-70fd-489b-80b9-2fbd3e92444b.jpg"
     }
   ]
 }
