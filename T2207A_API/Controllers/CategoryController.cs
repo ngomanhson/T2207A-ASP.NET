@@ -73,6 +73,45 @@ namespace T2207A_API.Controllers
             var msgs = ModelState.Values.SelectMany(v => v.Errors).Select(v => v.ErrorMessage);
             return BadRequest(string.Join(" | ", msgs));
         }
+
+        [HttpPut]
+        public IActionResult Update(EditCategory model)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    Category category = new Category { Id = model.id, Name = model.name };
+                    if (category != null)
+                    {
+                        _context.Categories.Update(category);
+                        return NoContent();
+                    }
+                } catch (Exception e)
+                {
+                    return BadRequest(e.Message);
+                }
+                
+            }
+            return BadRequest();
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                Category category = _context.Categories.Find(id);
+                if (category == null)
+                    return NotFound();
+                _context.Categories.Remove(category);
+                _context.SaveChanges();
+                return NoContent();
+            } catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
     }
 }
 
