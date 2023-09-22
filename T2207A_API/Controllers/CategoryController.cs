@@ -85,13 +85,16 @@ namespace T2207A_API.Controllers
                     if (category != null)
                     {
                         _context.Categories.Update(category);
+                        _context.SaveChanges();
                         return NoContent();
                     }
-                } catch (Exception e)
+                }
+                catch (Exception e)
                 {
                     return BadRequest(e.Message);
+
                 }
-                
+
             }
             return BadRequest();
         }
