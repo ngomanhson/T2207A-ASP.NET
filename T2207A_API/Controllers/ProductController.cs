@@ -76,6 +76,50 @@ namespace T2207A_API.Controllers
             var msgs = ModelState.Values.SelectMany(v => v.Errors).Select(v => v.ErrorMessage);
             return BadRequest(string.Join(" | ", msgs));
         }
+
+
+        [HttpPut]
+        public IActionResult Update(EditProduct model)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    Product product = new Product { Id = model.id, Name = model.name, Price = model.price, Qty = model.qty, Description = model.description, Thumbnail = model.thumbnai, CategoryId = model.category };
+                    if (product != null)
+                    {
+                        _context.Products.Update(product);
+                        _context.SaveChanges();
+                        return NoContent();
+                    }
+                }
+                catch (Exception e)
+                {
+                    return BadRequest(e.Message);
+
+                }
+
+            }
+            return BadRequest();
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                Product product = _context.Products.Find(id);
+                if (product == null)
+                    return NotFound();
+                _context.Products.Remove(product);
+                _context.SaveChanges();
+                return NoContent();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
     }
 }
 
