@@ -120,6 +120,39 @@ namespace T2207A_API.Controllers
                 return BadRequest(e.Message);
             }
         }
+
+        [HttpGet]
+        [Route("get-by-categoryId")]
+        public IActionResult GetbyCategory(int categoryId)
+        {
+            try
+            {
+                List<Product> products = _context.Products.Where(p => p.CategoryId == categoryId).ToList();
+                if (products != null)
+                {
+                    List<ProductDTO> data = products.Select(c => new ProductDTO
+                    {
+                        id = c.Id,
+                        name = c.Name,
+                        price = c.Price,
+                        description = c.Description,
+                        thumbnai = c.Thumbnail,
+                        qty = c.Qty,
+                        category = c.CategoryId
+                    }).ToList();
+
+                    return Ok(data);
+                }
+                else
+                {
+                    return NotFound("Không tìm thấy sản phẩm trong danh mục này.");
+                }
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
+        }
     }
 }
 
