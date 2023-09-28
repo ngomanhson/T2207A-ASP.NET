@@ -7,6 +7,7 @@ using T2207A_API.Entities;
 using T2207A_API.DTOs;
 using T2207A_API.Models.Product;
 using T2207A_API.Models.Category;
+using Microsoft.EntityFrameworkCore;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -145,12 +146,36 @@ namespace T2207A_API.Controllers
                 }
                 else
                 {
-                    return NotFound("Không tìm thấy sản phẩm trong danh mục này.");
+                    return NotFound("No products found in this category.");
                 }
             }
             catch (Exception e)
             {
                 return StatusCode(500, e.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("relateds")]
+        public IActionResult Relateds(int id)
+        {
+            try
+            {
+                Product p = _context.Products.Find(id);
+                if (p == null)
+                    return NotFound();
+                List<Product> ls = _context.Products
+                    .Where(p => p.CategoryId == p.CategoryId)
+                    .Where(p => p.Id != id)
+                    .Include(p => p.Category)
+                    .Take(4)
+                    .OrderByDescending(p => p.Id)
+                    .ToList();
+                return Ok(ls);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
             }
         }
     }

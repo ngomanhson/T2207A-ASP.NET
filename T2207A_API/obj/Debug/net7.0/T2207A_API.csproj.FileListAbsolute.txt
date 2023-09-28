@@ -74,3 +74,7 @@
 /Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_API/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
 /Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_API/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
 /Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_API/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_API/bin/Debug/net7.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_API/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_API/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_API/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll
