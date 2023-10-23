@@ -59,8 +59,8 @@ namespace T2207A_API.Controllers
         [Route("register")]
         public IActionResult Register(UserRegister model)
         {
-            //try
-            //{
+            try
+            {
                 var salt = BCrypt.Net.BCrypt.GenerateSalt(10);
                 var hashed = BCrypt.Net.BCrypt.HashPassword(model.password, salt);
                 var user = new User
@@ -79,11 +79,11 @@ namespace T2207A_API.Controllers
                     full_name = user.Fullname,
                     token = GenJWT(user)
                 });
-            //}
-            //catch (Exception e)
-            //{
-            //    return Unauthorized(e.Message);
-            //}
+        }
+            catch (Exception e)
+            {
+                return Unauthorized(e.Message);
+            }
         }
     }
 }
