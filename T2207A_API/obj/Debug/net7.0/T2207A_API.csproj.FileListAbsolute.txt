@@ -78,3 +78,5 @@
 /Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_API/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 /Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_API/bin/Debug/net7.0/Newtonsoft.Json.dll
 /Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_API/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll
+/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_API/bin/Debug/net7.0/BCrypt.Net-Next.dll
+/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_API/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

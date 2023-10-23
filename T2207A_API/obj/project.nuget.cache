@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "ElZxLfIeAuU8DimPRGBpTlhKBX2KBkwcT+wSPpQwGSRnrpAM4cqJhXcjt+r2i/tQ2dmDxHprWbVXrIjFx+A0dA==",
+  "dgSpecHash": "zIhoK1+65BWxEsDOKQpxf2AD/tVG17kj/ht+M0u54FLPZuK0GlWnDQ/uNIabLaOY3O7rmvjvAKOuNOmpSVWlhQ==",
   "success": true,
   "projectFilePath": "/Users/ngomanhson/Documents/Workspace/FPT-APTECH/Semester-3/T2207A/T2207A_API/T2207A_API.csproj",
   "expectedPackageFiles": [
     "/Users/ngomanhson/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/ngomanhson/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
+    "/Users/ngomanhson/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/ngomanhson/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/ngomanhson/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.12/microsoft.aspnetcore.authentication.jwtbearer.7.0.12.nupkg.sha512",
     "/Users/ngomanhson/.nuget/packages/microsoft.aspnetcore.jsonpatch/7.0.11/microsoft.aspnetcore.jsonpatch.7.0.11.nupkg.sha512",
     "/Users/ngomanhson/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/7.0.11/microsoft.aspnetcore.mvc.newtonsoftjson.7.0.11.nupkg.sha512",
     "/Users/ngomanhson/.nuget/packages/microsoft.aspnetcore.openapi/7.0.11/microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",

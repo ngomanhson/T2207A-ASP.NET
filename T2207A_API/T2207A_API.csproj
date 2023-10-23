@@ -22,6 +22,8 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.11" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.12" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +32,7 @@
     <None Remove="Models\" />
     <None Remove="Models\Category\" />
     <None Remove="Models\Product\" />
+    <None Remove="Models\User\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -37,5 +40,6 @@
     <Folder Include="Models\" />
     <Folder Include="Models\Category\" />
     <Folder Include="Models\Product\" />
+    <Folder Include="Models\User\" />
   </ItemGroup>
 </Project>

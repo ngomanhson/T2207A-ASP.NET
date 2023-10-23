@@ -13,7 +13,7 @@ public partial class User
 
     public string? Avatar { get; set; }
 
-    public string Phone { get; set; } = null!;
+    public string? Phone { get; set; } = null!;
 
     public string? Password { get; set; }
 
