@@ -68,7 +68,7 @@ namespace T2207A_API.Controllers
                     Email = model.email,
                     Fullname = model.full_name,
                     Password = hashed,
-                    //Phone = "0987654321"
+                    Phone = "0987654321"
                 };
                 _context.Users.Add(user);
                 _context.SaveChanges();
@@ -84,6 +84,69 @@ namespace T2207A_API.Controllers
             {
                 return Unauthorized(e.Message);
             }
+        }
+
+        [HttpPost]
+        [Route("login")]
+        public IActionResult Login(UserLogin model)
+        {
+            try
+            {
+                var user = _context.Users.Where(u => u.Email.Equals(model.email)).First();
+
+                if (user == null)
+                {
+                    throw new Exception("Email or Password is not correct.");
+                }
+                bool verified = BCrypt.Net.BCrypt.Verify(model.password, user.Password);
+
+                if (!verified)
+                {
+                    throw new Exception("Email or Password is not correct.");
+                }
+
+                return Ok(new UserDTO
+                {
+                    id = user.Id,
+                    email = user.Email,
+                    full_name = user.Fullname,
+                    token = GenJWT(user)
+                }) ;
+                
+            }catch(Exception e)
+            {
+                return Unauthorized(e.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("profile")]
+        public IActionResult Profile()
+        {
+            // Get info from token
+            var identity = HttpContext.User.Identity as ClaimsIdentity;
+            if (!identity.IsAuthenticated)
+            {
+                return Unauthorized("Not Authorized");
+            }
+
+            try
+            {
+                var userClaims = identity.Claims;
+                var userId = userClaims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+                var user = _context.Users.Find(Convert.ToInt32(userId));
+                return Ok(new UserDTO // Dung ra phai la UserProfileDTO
+                {
+                    id = user.Id,
+                    email = user.Email,
+                    full_name = user.Fullname
+                }); 
+            }catch(Exception e)
+            {
+                return Unauthorized(e.Message);
+            }
+
+            return Ok();
         }
     }
 }
