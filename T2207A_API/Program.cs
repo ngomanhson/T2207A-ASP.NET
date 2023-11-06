@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,9 +32,9 @@ builder.Services.AddSwaggerGen();
 
 
 // connect db
-string connectionString = builder.Configuration.GetConnectionString("API");
+T2207A_API.Entities.T2207aApiContext.connectionString = builder.Configuration.GetConnectionString("API");
 builder.Services.AddDbContext<T2207A_API.Entities.T2207aApiContext>(
-    options => options.UseSqlServer(connectionString)
+    options => options.UseSqlServer(T2207A_API.Entities.T2207aApiContext.connectionString)
     );
 
 // Add Authencation JWT Bearer
@@ -51,6 +53,21 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     };
 });
 
+// Add Policy
+builder.Services.AddSingleton<IAuthorizationHandler,
+                    T2207A_API.Handlers.ValidYearOldHandler>();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("SuperAdmin", policy => policy.RequireClaim(
+        ClaimTypes.Email, "admin@gmail.com"));
+
+    options.AddPolicy("Member", policy => policy.RequireClaim(
+       ClaimTypes.Email));
+
+    options.AddPolicy("Age18Plus", policy =>policy.AddRequirements(
+        new T2207A_API.Requirements.YearOldRequirements(18,60)
+        ));
+});
 
 var app = builder.Build();
 

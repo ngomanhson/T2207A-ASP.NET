@@ -33,6 +33,8 @@
     <None Remove="Models\Category\" />
     <None Remove="Models\Product\" />
     <None Remove="Models\User\" />
+    <None Remove="Requirements\" />
+    <None Remove="Handlers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -41,5 +43,7 @@
     <Folder Include="Models\Category\" />
     <Folder Include="Models\Product\" />
     <Folder Include="Models\User\" />
+    <Folder Include="Requirements\" />
+    <Folder Include="Handlers\" />
   </ItemGroup>
 </Project>

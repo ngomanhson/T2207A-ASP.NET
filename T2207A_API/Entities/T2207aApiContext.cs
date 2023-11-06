@@ -6,6 +6,8 @@ namespace T2207A_API.Entities;
 
 public partial class T2207aApiContext : DbContext
 {
+    public static string connectionString;
+
     public T2207aApiContext()
     {
     }
@@ -27,9 +29,9 @@ public partial class T2207aApiContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-//    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-//        => optionsBuilder.UseSqlServer("Data Source=localhost,1433; Database=T2207A_API; User Id=sa; Password=your_Password; TrustServerCertificate=true");
+      => optionsBuilder.UseSqlServer(connectionString);
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
